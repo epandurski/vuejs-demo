@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>    
+    <script src="js/routes.js" type="module"></script>
+    <title>OpenLiga Demo App</title>    
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-default">
+	<div class="container-fluid">
+	  <div class="navbar-header">
+	    <a class="navbar-brand" href="/#/">OpenLiga Demo App</a>
+	  </div>
+	  <ul class="nav navbar-nav">
+	    <router-link to="/scores" tag="li" active-class="active"><a>Scores</a></router-link>
+	    <router-link to="/weekend-matches" tag="li" active-class="active"><a>Weekend Matches</a></router-link>
+	    <router-link to="/all-matches" tag="li" active-class="active"><a>All Matches</a></router-link>
+	  </ul>
+	</div>
+      </nav>      
+      <router-view></router-view>      
+    </div>
+  </body>
+</html>
